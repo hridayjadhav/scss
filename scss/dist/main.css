@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  background-color: #001C30;
+  color: #64CCC5;
+  padding: 10%;
+}
+
+h1 {
+  color: #FFF;
+}

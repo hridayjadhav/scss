@@ -1,12 +1,37 @@
+
+$c1: #001C30;
+$c2: #176B87;
+$c3: #64CCC5;
+$c4: #FFF;
+$success:green;
+$info:blue;
+$warning:yellow;
+$danger:red;
+
 *{
     margin: 0;
     padding: 0;
 }
 
-$c1: #001C30;
-$c2: #176B87;
-$c3: #64CCC5;
-
 div{
     background-color: $c1;
+    color: $c3;
+    padding: 10%;
+}
+h1{
+    color: $c4;
+}
+.clr1{
+    color: $success;
+}
+.clr2{
+    color: $info;
+}.clr3{
+    color: $warning;
+}.clr4{
+    color: $danger;
+}
+
+p{
+    color: $c3;
 }
