@@ -1,12 +1,21 @@
+@import "variables";
+@import "heading";
+@import "para";
+@import "mixins";
+@import "list";
+@import "buttons";
 
-$c1: #001C30;
-$c2: #176B87;
-$c3: #64CCC5;
-$c4: #FFF;
-$success:green;
-$info:blue;
-$warning:yellow;
-$danger:red;
+
+
+
+// $c1: #001C30;
+// $c2: #176B87;
+// $c3: #64CCC5;
+// $c4: #FFF;
+// $success:green;
+// $info:blue;
+// $warning:yellow;
+// $danger:red;
 
 *{
     margin: 0;
@@ -17,21 +26,84 @@ div{
     background-color: $c1;
     color: $c3;
     padding: 10%;
-}
-h1{
-    color: $c4;
-}
-.clr1{
-    color: $success;
-}
-.clr2{
-    color: $info;
-}.clr3{
-    color: $warning;
-}.clr4{
-    color: $danger;
+    text-align: center;
+    
+    // ul{
+    //     background-color: $c2;
+    //     text-align: center;
+    //     li{
+    //         list-style-type: none;
+    //         a{
+    //             text-decoration: none;
+    //             color: $c4;
+    //             line-height: 1.4em;
+
+    //         }
+    //     }
+    // }
 }
 
-p{
-    color: $c3;
-}
+
+// h1{
+//     color: $c4;
+// }
+
+
+// .clr1{
+//     color: $success;
+// }
+// .clr2{
+//     color: $info;
+// }.clr3{
+//     color: $warning;
+// }.clr4{
+//     color: $danger;
+// }
+// p{
+//     color: $c3;
+// }
+
+
+
+
+
+    //                            VARIABLES CONCEPT
+// first of all we have to download an compiler, then we have to create an folder name scss, after creating the folder we have to make a new file name main.scss, after that just click on the compiler's name which is on right side of status bar below. and after it the main.css and main.css.map will be automatically added. then we just have to style in scss file and then the code will be automatically transfer in css file.
+// after this, we have to  create variables like we did in root. and so on.
+
+
+
+//                                NESTING CONCEPT
+// In nesting concept we have to do proper nesting like I've done inside the div in main.scss.
+
+
+//                                PARTIALS CONCEPT
+// first of all we have to create files like this (_variables.scss), underscore schould be there.
+// and then we have to @import the files which we will create for partial in main.scss in the correct sequence.
+// then we have to cut and paste the css in perticular partial files. like variables should be inside the _variables.scss. etc. so on
+// which i've commented, all those css is in perticular files. i've commented to understand that css was in main.scss only but then when we use partial concept we transfer all the css in perticular files.
+// the benifits are that in lenghty project we do not need to find or waste time. we can directly se as the perticular scss files are created for each section.
+
+
+//                                MIXINS CONCEPT
+// first of all we have to create an file as _mixins.scss. its also like a partial.
+// then we have to @import it to main.scss and be aware to @import above the file which youve taken to use mixin. I mean, if there is a file name list, so youve to @import that file above the list file.
+// and then go back to the _mixins.scss and type @mixins anyName {}, and whatever you want to animate or style just code there.
+// and after that wherever you wanna use it, just go to that file or module, and type @include and file name, ex. @include anyName.
+// it will work easily and you can use it in any files.
+// we can pass variables also like we did in react via props. so we can pass props here like we have to code ex. @mixins anyName($color) and after that we have to pass the props in partials where we coded @include anyName(purple) -{here we have to pass real color},
+
+
+//                               EXTEND / INHERITANCE CONCEPT
+// first of all we will see the ex. in buttons.
+// we will take 5 buttons and we'll give class name as btn btn-primary and so on.
+// and after that we have to style it.
+//  but there is the twist, we have to work smarter, thats why this concept is here.
+// like if we have 5 buttons, and we do not want 2 classnames in the CLASS, so we have to style that .btn class, and after that remove the .btn from html. 
+// and after that we have to code @extend and then class name which we do not have in html but we have in the scss. ex @extend .btn;
+// this @extend .btn; we can paste in each component, we do not have to code it many times.
+// thats the reason to use extend/inheritance, it makes the thing easy like we have a style code and we can put that code in any componant without having specific classname, via @extend .classname.
+
+
+
+//                                 OPERATORS CONCEPT

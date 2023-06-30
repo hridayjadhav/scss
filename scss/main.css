@@ -1,16 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-div {
-  background-color: #001C30;
-  color: #64CCC5;
-  padding: 10%;
-}
-
 h1 {
   color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 7%;
 }
 
 .clr1 {
@@ -31,4 +22,92 @@ h1 {
 
 p {
   color: #64CCC5;
+}
+
+ul {
+  background-color: #fff;
+  border: 5px solid blue;
+  box-shadow: 0px 0px 5px 5px #ccc;
+  background-color: #176B87;
+  text-align: center;
+  margin-top: 7%;
+}
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #FFF;
+  line-height: 1.4em;
+}
+
+.notesSec {
+  background-color: #fff;
+  border: 5px solid purple;
+  box-shadow: 0px 0px 5px 5px #ccc;
+  margin: 30px;
+  max-width: 80%;
+  background-color: #176B87;
+}
+
+.btn, .btn-default, .btn-info, .btn-warning, .btn-danger, .btn-primary, .btn-success {
+  background-color: #ccc;
+  padding: 10px 20px;
+  border: 0;
+  box-shadow: 0px 0px 2px 2px #000;
+  margin: 30px;
+}
+
+.btn-success {
+  background-color: green;
+}
+.btn-success:hover {
+  background-color: #004d00;
+}
+
+.btn-primary {
+  background-color: blue;
+}
+.btn-primary:hover {
+  background-color: #0000cc;
+}
+
+.btn-danger {
+  background-color: red;
+}
+.btn-danger:hover {
+  background-color: #cc0000;
+}
+
+.btn-warning {
+  background-color: orange;
+}
+.btn-warning:hover {
+  background-color: #cc8400;
+}
+
+.btn-info {
+  background-color: skyblue;
+}
+.btn-info:hover {
+  background-color: #5bbce4;
+}
+
+.btn-default {
+  background-color: #ccc;
+}
+.btn-default:hover {
+  background-color: #b3b3b3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  background-color: #001C30;
+  color: #64CCC5;
+  padding: 10%;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
